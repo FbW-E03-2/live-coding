@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(233, 132, 8);
+}
+
+/* ANATOMY */
+/* selector {
+    property: value;
+} */
+
+h2 {
+    color: cornflowerblue;
+}
+
+h1 {
+    color: yellow
+}
+
+ul {
+    list-style: none;
+}
+
+/* descendant combinator */
+
+li li {
+    list-style: circle;
+}
