@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS UNITS</title>
+  </head>
+  <body>
+    <h1>Let's learn CSS units 🙂</h1>
+
+    <h2>px, %, vw & vh</h2>
+
+    <!-- px absolute unit, is always going to be the same -->
+    <article class="box per50">50%</article>
+    <article class="box2 pix80">80px</article>
+    <!-- vw the entire screen it doesn't care about parent -->
+    <article class="box vw50">50vw</article>
+    <!-- 1vh is 1% of the height -->
+    <article class="box2 vh25">25vh</article>
+
+    <h2>px, %, vw, vh - inside a parent</h2>
+    <section class="parent">
+        <!-- here the 50% is from the parent not the whole width -->
+      <article class="box per50">50%</article>
+      <article class="box2 pix80">80px</article>
+      <article class="box vw50">50vw</article>
+      <article class="box2 vh25">25vh</article>
+    </section>
+
+    <h2>rem vs em, both units are relative to the font size. rem is relative to the root, but em is relative to the parent</h2>
+
+    <p>em and rem units are very practical in creating perfectly scalable layouts!! </p>
+
+    <div class="one-rem">1rem</div>
+    <div class="one-em">1em</div>
+    <div class="two-rem">2rem</div>
+    <div class="two-em">2em</div>
+
+    <hr>
+
+    <section class="parent2">inside parent
+        <div class="one-rem">1rem</div>
+        <div class="one-em">1em</div>
+        <div class="two-rem">2rem</div>
+        <div class="two-em">2em</div>
+    </section>
+
+
+  </body>
+</html>

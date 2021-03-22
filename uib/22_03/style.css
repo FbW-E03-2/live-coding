@@ -1,0 +1,70 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.box {
+    background-color: #626569;
+    border: 2px solid #000;
+}
+
+.box2 {
+    background-color: #00adb5;
+}
+
+.per50 {
+    width: 50%;
+}
+
+.pix80 {
+    width: 80px;
+}
+
+.vw50 {
+    width: 50vw;
+}
+
+.vh25 {
+    height: 25vh;
+}
+
+.parent {
+    width: 150px;
+    border: 3px solid #000;
+}
+
+/* here starts em and rems */
+
+
+/* root element is usually by default 16px */
+
+h1 {
+    font-size: 3rem;
+    /* this is 48px */
+    text-align: center;
+}
+
+.one-rem {
+    font-size: 1rem;
+}
+
+.one-em {
+    font-size: 1em;
+    color: tomato;
+}
+
+/* this is like 16px * 2 */
+.two-rem {
+    font-size: 2rem;
+}
+
+.two-em {
+    font-size: 2em;
+    color: #00adb5;
+
+}
+
+.parent2 {
+    /* this is 30px */
+    font-size: 1.875rem;
+
+}
