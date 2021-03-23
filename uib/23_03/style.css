@@ -1,0 +1,30 @@
+/* * {
+    background-color: lawngreen;
+} */
+
+img {
+    width: 300px;
+    height: 300px;
+    /* width: 25%;
+    height: 25%; */
+    border: 3px solid rgb(255, 255, 0);
+    
+    /* border-radius will round our corners and with 50% we get a circle */
+    border-radius: 5%;
+    opacity: 1;
+    float: left;
+    /* float: right; */
+    margin: 1rem; 
+    /* default value */
+    /* object-fit: fill; */
+    /* object-fit: contain; */
+
+    /* object-fit: cover; */
+    /* object-fit: none; */
+    object-fit: scale-down;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
