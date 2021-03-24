@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Sectioning & Intro to Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- The "#" causes the page to scroll to the top when the link is clicked -->
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Meet The Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Our Fake Website</h1>
+    </header>
+    <main class="container">
+        <!-- Main contains the main content or the 'meat' of the page. There can only be one per page! 'Container' is commonly used class name for main content of page -->
+        <!-- section - represents a standalone section of content -->
+        <section>
+            <h2>Everything is a box</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum inrecusandae     odio ducimus totam at quisquam explicabo doloremexercitationem temporibus   sed assumenda sit magnam maiores libero, nobissunt illum. Nam.
+                Cum voluptates voluptate ut incidunt beatae architecto mollitia nostrum,    animi illum quo, hic esse totam error optio nisi unde laboriosam, dolor    accusamus labore provident explicabo facilis quae aspernatur? Error,   expedita.
+            </p>
+        </section>
+        <!-- end of section 1 -->
+
+        <section>
+            <h3>Additional Content</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, vitae minima laboriosam deserunt quia aspernatur dolores cupiditate, voluptates temporibus itaque, iste nesciunt. Voluptates atque distinctio quidem tempora enim odit molestias.
+                Vero, dignissimos quasi. Debitis, officiis? In, deleniti provident consequatur amet mollitia expedita laborum dignissimos consectetur aspernatur consequuntur sint dolorem odio assumenda natus blanditiis, quod corporis culpa eius! Repellat, quo minus?
+                Aspernatur dicta, perferendis, ad sed eos nisi iure repellat laborum accusantium magnam eius, ipsam minima officiis? Alias exercitationem itaque autem, corporis hic unde dolore porro, eaque facilis vel cupiditate vitae.
+            </p>
+        </section>
+        <!-- end of section 2 -->
+
+        <section class="article-section">
+            <article>
+                <!-- Examples - a blog entry, individual tweets on Twitter, listed items on a search results page -->
+                <h3>Title of Article</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus in, voluptates neque ducimus dignissimos sint ratione expedita explicabo, ab porro cumque atque suscipit recusandae officiis repudiandae vel rem, ut tenetur tempora molestiae debitis! Voluptatum deserunt enim dolorum repudiandae iste harum nihil? Odio atque inventore delectus, minus neque sapiente earum nisi eos unde. Nobis at quas perferendis dolore, minus dicta! Voluptatibus dolore quos ad harum quisquam tempore commodi quaerat, nobis deleniti sed accusantium in magni fugiat esse vero sapiente numquam dolorem facilis.
+                </p>
+            </article>
+            <!-- end of article 1 -->
+
+            <article>
+                <h3>Some Random Title</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque earum adipisci atque illum quod, vitae dolores iure ipsa unde facere quam. Aliquid, aut. Beatae rerum illo quae fugit mollitia dicta!
+                    Unde, nulla. Dolor omnis eaque corporis rerum ducimus ea voluptates earum obcaecati maxime quaerat dignissimos, quisquam, reiciendis accusamus sed. Temporibus natus sint eveniet debitis asperiores porro ea veniam praesentium quod!
+                </p>
+            </article>
+            <!-- end of article 2 -->
+        </section>
+        <!-- end of article-section -->
+
+        <section class="aside-section">
+            <!-- 'aside' represents a portion of the document whose content is only indirectly related to the main content -->
+
+            <aside>
+                <div>
+                    <p>
+                        The <code>div</code> element is a generic container for content - it has no effect on the layout until we apply styling
+                    </p>
+                </div>
+            </aside>
+            <!-- end of aside 1 -->
+            <aside>
+                <div>
+                <p>
+                    The <code>span</code> element is also a generic container that allows us to style <strong>inline</strong>. It does not represent anything - its just a 'hook' we use for styling.
+                    So we can make <span>fonts</span> larger or a different color.
+                </p>
+                </div>
+            </aside>
+        </section>
+        <!-- end of aside section -->
+    </main>
+
+    <!-- Footer contains info about copyright, logo, soc media, author, privacy stuff, contact links -->
+    <footer>
+        <p>Deutschland 2021 &copy;FbWE03-2</p>
+    </footer>
+    
+</body>
+</html>

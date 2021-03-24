@@ -1,0 +1,52 @@
+* {
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: helvetica, sans-serif;
+}
+
+header {
+  width: 40%;
+  margin: 0 auto;
+  /* top, right, bottom, left or vertical / horizontal */
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 1rem;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.article-section {
+  width: 45%;
+}
+
+.aside-section aside {
+  width: 45%;
+  display: inline-block;
+  border-left: 2px solid hotpink;
+  border-bottom: 4px solid hotpink;
+  background-color: #efefef;
+  padding-left: 3rem;
+}
+
+code {
+  background-color: yellow;
+  padding: 5px;
+}
+
+span {
+  color: royalblue;
+}
+
+footer {
+  margin-top: 7rem;
+  background-color: #efefef;
+  padding: 1rem 0;
+  text-align: center;
+}
