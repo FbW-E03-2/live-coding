@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.block {
+  border: 1px solid lawngreen;
+}
+
+.inline-section,
+.inline-block_section {
+  border: 2px solid;
+}
+
+/* INLINE */
+
+.inline {
+  display: inline;
+  border: 1px solid orangered;
+  width: 20%;
+  height: 4rem;
+  padding: 2rem;
+}
+
+/* INLINE BLOCK */
+
+.inline-block {
+  border: 1px solid hotpink;
+  display: inline-block;
+  width: 20%;
+  height: 4rem;
+  padding: 2rem;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  border: 1px solid #efefef;
+  padding: 3rem 5rem;
+  margin-right: 4rem;
+  background-color: tomato;
+  color: #efefef;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+  background-color: orchid;
+  color: darkgray;
+}

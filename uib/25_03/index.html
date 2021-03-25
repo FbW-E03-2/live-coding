@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block,Inline and Inline-block</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Display</h1>
+        <!-- logo, nav, author info -->
+    </header>
+    <main class="container">
+        <section>
+            <h2>Block</h2>
+            <div class="block">Block!!</div>
+            <div class="block">Block!!</div>
+            <div class="block">Block!!</div>
+            <div class="block">Block!!</div>
+            <ul>
+                <li>Appears on a new line underneath the preceding element</li>
+                <li>Will be 100% width UNLESS specified otherwise</li>
+                <li><code>div, section, p, main, header, article, aside, footer</code></li>
+            </ul>
+        </section>
+        <!-- end of block section -->
+
+        <section>
+            <h2>Inline</h2>
+
+            <section class="inline-section">
+                <div class="inline">Inline!</div>
+                <div class="inline">Inline!</div>
+                <div class="inline">Inline!</div>
+                <div class="inline">Inline!</div>
+            </section>
+
+
+            <ul>
+                <li>Does NOT start on a new line</li>
+                <li>Only takes as much room as necessary</li>
+                <li>Does not (really) respect margin and padding</li>
+                <li><code>img, a, span, code, em</code></li>
+            </ul>
+        </section>
+        <!-- end of inline section -->
+
+        <section>
+            <h2>Inline-Block</h2>
+
+            <section class="inline-block_section">
+                <div class="inline-block">Inline Block!</div>
+                <div class="inline-block">Inline Block!</div>
+                <div class="inline-block">Inline Block!</div>
+                <div class="inline-block">Inline Block!</div>
+            </section>
+
+            <ul>
+                <li>Not a default value</li>
+                <li>Middle ground between inline and block</li>
+                <li>Width and height are respected</li>
+            </ul>
+        </section>
+        <!-- end of inline-block section -->
+
+        <section class="button-section">
+            <a href="#" class="btn">Push Me!</a>
+            <a href="#" class="btn">Push Me Too</a>
+        </section>
+    </main>
+</body>
+</html>
