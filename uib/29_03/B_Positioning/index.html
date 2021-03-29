@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- RELATIVE -->
+    <h2>position - relative</h2>
+    <p>
+      An element with <code>position: relative</code> is positioned RELATIVE to
+      it's normal position.
+    </p>
+
+    <div class="relative">
+      This <code>div</code> has <code>position: relative;</code>
+    </div>
+
+    <!-- ABSOLUTE -->
+    <h2>position - absolute</h2>
+    <p>
+      An element with <code>position: absolute</code> is positioned relative to
+      it's NEAREST POSITIONED ANCESTOR
+    </p>
+
+    <div class="relative-2">
+      this div element has <code>position: relative;</code>
+      <div class="absolute">
+        this div element has <code>position: absolute;</code>
+      </div>
+    </div>
+    <!-- STICKY -->
+
+    <h2>position - sticky</h2>
+    <p>
+      Allows a positioned element to act like it's relatively positioned UNTIL
+      it is scrolled to a certain threshold point (eg 10px from the top of the
+      viewport), after which it becomes fixed.
+    </p>
+
+    <div class="sticky-box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officia
+        autem, voluptatibus, ex unde ut asperiores quidem eveniet officiis
+        praesentium ipsum expedita doloremque dolores quia laudantium mollitia
+        temporibus recusandae earum? Maxime ipsum quos consequatur voluptatem
+        mollitia, pariatur quo distinctio vitae quae, officia reiciendis
+        inventore placeat voluptatum sed ducimus, magni laborum perferendis odit
+        aperiam! Est qui eius atque corrupti totam mollitia!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores qui
+        iure quasi exercitationem quas consequatur distinctio necessitatibus
+        sequi, porro iusto explicabo voluptatibus at aperiam officia recusandae
+        quo esse magni. Harum!
+      </p>
+      <div class="sticky">
+        <code>position: sticky;</code>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+        voluptatum, aspernatur vel sint nihil molestiae autem possimus eos
+        repellendus nostrum similique necessitatibus animi aperiam alias odit
+        consequatur, perspiciatis earum libero? Soluta voluptas pariatur
+        aliquam! Magni explicabo eligendi cum repellat, quaerat, id voluptate
+        non ipsam corrupti culpa veniam quia sequi quas saepe magnam maxime
+        cumque at. Animi unde in amet optio. Facere, sequi molestias? Eaque
+        alias minima ea, amet mollitia minus, architecto necessitatibus pariatur
+        delectus perspiciatis soluta corrupti, commodi aliquid cupiditate
+        similique quis. Maiores, ex ut modi debitis earum placeat minima!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, rem ex
+        ipsum nisi officia eos numquam! Esse aliquam qui, culpa nisi tempore
+        perspiciatis doloribus, dolorum repudiandae, rerum debitis dolores et.
+        Facilis delectus iste repellendus ea et, hic assumenda incidunt
+        explicabo quae quo commodi nam sequi obcaecati mollitia veniam
+        exercitationem aperiam quaerat eveniet accusantium fugit ad sunt alias.
+        Placeat, minima eius!
+      </p>
+    </div>
+    <!-- FIXED -->
+
+    <h2>position - fixed</h2>
+    <p>
+      Fixed positioning sets an element at a specific location on the screen
+      that WILL NOT scroll with the page.
+    </p>
+
+    <div class="fixed-box">
+      <p class="fixed"><code>position: fixed;</code></p>
+    </div>
+
+    <!-- Z-INDEX -->
+    <h2>z-index</h2>
+    <p>
+      The <code>z-index</code> property controls the stacking order of elements
+      that overlap
+    </p>
+    <div class="index top"></div>
+    <div class="index bottom"></div>
+  </body>
+</html>
