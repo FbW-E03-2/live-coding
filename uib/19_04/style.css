@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root {
+    font-size: 62.5%;
+} */
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.rappers {
+    width: 20%;
+    margin: 5% auto;
+}
+
+.rappers, td {
+    border: 1px solid gray;
+}
+
+.rappers td {
+    padding: 5px 8px;
+}
+
+.expense {
+    width: 33%;
+    border: 2px solid crimson;
+}
+
+.expense td {
+    border: 2px solid crimson;
+}
+
+.country, th, td {
+    border: 1px solid gray;
+}
+.country {
+    width: 80%;
+    margin: 5% auto;
+    border: 2px solid orange;
+}
