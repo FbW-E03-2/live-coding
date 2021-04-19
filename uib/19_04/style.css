@@ -1,48 +1,114 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* :root {
-    font-size: 62.5%;
-} */
+:root {
+  font-size: 62.5%;
+}
 
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-size: 1.6rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-h1, h2 {
-    text-align: center;
+h1,
+h2 {
+  text-align: center;
 }
 
 .rappers {
-    width: 20%;
-    margin: 5% auto;
+  width: 20%;
+  margin: 5% auto;
+  text-align: center;
+}
+.rappers tr:nth-child(even) {
+  background-color: aqua;
 }
 
-.rappers, td {
-    border: 1px solid gray;
+.rappers tr:nth-child(5) {
+  background-color: deeppink;
+}
+
+/* Formula that represents a cycle, n is a counter (starts from 0) and b is the offset value. In this case is starting from 4 every 2nd tr in rappers table will have the text color yellowgreen. */
+.rappers tr:nth-child(2n + 4) {
+  color: yellowgreen;
+}
+
+/* .rappers tr:nth-child(3n + 0)  {
+  color: yellowgreen;
+} */
+
+.rappers,
+td {
+  border: 1px solid gray;
 }
 
 .rappers td {
-    padding: 5px 8px;
+  padding: 0.5rem 0.8rem;
 }
 
+/* expense table */
 .expense {
-    width: 33%;
-    border: 2px solid crimson;
+  width: 40%;
+  margin: 3% auto;
+  border: 2px solid crimson;
+  border-collapse: collapse;
+  text-align: center;
 }
 
-.expense td {
-    border: 2px solid crimson;
+.expense, td {
+  border: 2px solid crimson;
 }
 
-.country, th, td {
-    border: 1px solid gray;
+.expense thead {
+    background-color: dimgray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.expense tfoot {
+    background-color: greenyellow;
+    /* color: white; */
+}
+
+/* country table */
+.country,
+th,
+td {
+  border: 1px solid gray;
 }
 .country {
-    width: 80%;
-    margin: 5% auto;
-    border: 2px solid orange;
+  width: 80%;
+  margin: 5% auto;
+  border: 2px solid orange;
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
+
+.country th {
+    background-color: navy;
+    color: white;
+}
+
+/* colgroup table */
+.colgroup {
+    margin: 5% auto;
+    border-collapse: collapse;
+}
+
+.colgroup tr > th, .colgroup td {
+    padding: 1rem;
+    text-align: center;
+}
+/* attribute selector */
+th[colspan="2"] {
+    background-color: lightblue;
+}
+
+.colgroup th[scope="col"] {
+    background-color: coral;
+}
+
