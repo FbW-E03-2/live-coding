@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <header>
+        <h1>Contact form</h1>
+    </header>
+    <main>
+        <form action="https://formspree.io/f/mleadjye" method="POST">
+            <!-- for needs to be the same as the id from the input -->
+            <fieldset>
+                <legend>Your Details:</legend>
+            
+                <div>
+                    <label for="fname">First Name:</label> 
+                    <input type="text" name="first-name" id="fname">
+                </div>
+
+                <div>
+                    <label for="lname">Surname:</label>
+                    <input type="text" name="last-name" id="lname">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="e-mail" id="email">
+                </div>
+            </fieldset>
+
+            <!-- ************************************************* -->
+
+            <fieldset>
+                <legend>Your Programming Experience</legend>
+                <p>Select your favorite language:</p>
+
+                <!-- when using input type radio the name has to be the same in all the options -->
+                <div>
+                    <input type="radio" name="language" id="java" value="java">
+                    <label for="java">Java</label>
+                </div>
+                <div>
+                    <input type="radio" name="language" id="fortran" value="fortran">
+                    <label for="fortran">Fortran</label>
+                </div>
+                <div>
+                    <input type="radio" name="language" id="python" value="python">
+                    <label for="python">Python</label>
+                </div>
+            
+
+            <!-- *************************************************** -->
+
+            <p>What careers are you considering:</p>
+            <div>
+                <input type="checkbox" name="career" id="web-dev" value="Web-Developer" checked >
+                <label for="web-dev">Web Developer</label>
+            </div>
+            <div>
+                <input type="checkbox" name="career" id="web-designer" value="Web-Designer">
+                <label for="web-designer">Web Designer</label>
+            </div>
+            <div>
+                <input type="checkbox" name="career" id="dev-ops" value="Dev-Ops" >
+                <label for="dev-ops">Dev Ops</label>
+            </div>
+            <div>
+                <input type="checkbox" name="career" id="sys-admin" value="System-Admin">
+                <label for="sys-admin">System Admin</label>
+            </div>
+            <div class="experience">
+                <label for="experience">Tell us about your experience:</label>
+                <textarea name="experience" id="experience" cols="30" rows="10" required></textarea>
+            </div>
+
+        </fieldset>
+
+        <!-- ******************************************************** -->
+
+        <div class="select">
+            <label for="reference">How did you find us?</label>
+            <select name="reference" id="reference">
+                <option value="internet">Internet</option>
+                <option value="television">Television</option>
+                <option value="poster">Poster</option>
+                <option value="family-friend">Friend / Family</option>
+                <option value="newspaper">Newspaper</option>
+                <option value="social">Social Media</option>
+            </select>
+        </div>
+
+            <!-- button -->
+            <button type="submit">Apply Now</button>
+        
+        </form>
+
+    
+    </main>
+
+</body>
+</html>
