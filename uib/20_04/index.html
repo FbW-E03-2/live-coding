@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>FORMS</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
             <!-- for needs to be the same as the id from the input -->
             <fieldset>
                 <legend>Your Details:</legend>
-            
+                <!-- maxlength is the maximum amount of characters the user is allowed to type in that input field -->
                 <div>
                     <label for="fname">First Name:</label> 
-                    <input type="text" name="first-name" id="fname">
+                    <input type="text" name="first-name" id="fname" maxlength="50" minlength="1">
                 </div>
 
                 <div>
@@ -91,9 +92,10 @@
             </select>
         </div>
 
+        <div class="submit">
             <!-- button -->
             <button type="submit">Apply Now</button>
-        
+        </div>
         </form>
 
     
