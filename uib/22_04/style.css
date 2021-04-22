@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 25%;
+    margin: 5% auto;
+}
+
+fieldset {
+    padding: 6px 12px;
+    position: relative;
+}
+
+legend {
+    padding: 6px;
+    background-color: #5be226;
+    color: #efefef;
+    border-radius: 6px;
+    position: absolute;
+    bottom: -12px;
+    right: -2px;
+}
+
+.input_main {
+    margin-bottom: 6px;
+}
+
+label {
+    margin-right: 16px;
+    line-height: 36px;
+}
+
+input {
+    appearance: none;
+    border-radius: 100%;
+    border: 2px solid #615f5f;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    position: relative;
+    top: 2px;
+    transition: 0.2s all linear;
+    outline: none;
+}
+
+input:checked {
+    border: 8px solid #0952d8;
+}
