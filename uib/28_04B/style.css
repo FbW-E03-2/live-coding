@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.item {
+    height: 20rem;
+    width: 20rem;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #efefef;
+}
+
+/* flex-grow */
+/* - This defines the ability for a flex item to grow if necessary.
+- The value is unitless - it serves as a proportion that dictates what amount of the available space the item should take up. */
+
+.three {
+    flex-grow: 2;
+}
+
+/* flex-shrink */
+/* This defines the ability for an item to shrink if necessary */
+
+.one {
+    flex-shrink: 3;
+}
+
+/* flex & flex-basis */
+/* flex: flex-grow flex-shrink flex-basis */
+
+/* flex-basis specifies the initial size of the flex-item BEFORE any available space is distributed. Default is 0. */
+
+.two {
+    flex: 2 3 5rem;
+}
+
+/* order */
+
+.four {
+    order: -2;
+}
+
+ /* .three {
+    order: 1;
+} */
+
+.two {
+    order: -1;
+}
+
+
+/* .one {
+    order: 3;
+}  */
+
+/* ******************************************************* */
+
+.flex-container-2 {
+    height: 40rem;
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    /* align-items: baseline; */
+}
+
+.flex-item {
+    background-color: chartreuse;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+    width: 10rem;
+    margin: 6px;
+}
+
+.flex-end {
+    align-self: flex-end;
+}
+
+.center {
+    align-self: center;
+}
+
+.baseline {
+    align-self: baseline;
+    height: 16rem;
+}
+
+.stretch {
+    align-self: stretch;
+}
+
+.flex-start {
+    /* align-self: flex-start; */
+}
