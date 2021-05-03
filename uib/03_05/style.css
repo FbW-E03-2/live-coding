@@ -1,0 +1,53 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6rem;
+}
+
+/* ***************************************** */
+
+h1 {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10rem 20rem 10rem;
+    /* grid-template-columns: 1fr 2fr 1fr 1fr 1fr 0.1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 0.5rem;
+    /* column-gap: 1rem;
+    row-gap: 1.5rem; */
+    /* justify-content: center; */
+    margin-bottom: 2rem;
+   
+} 
+
+.container div {
+    padding: 2rem;
+    border: 2px solid dimgray;
+    background-color: tomato;
+    color: antiquewhite;
+}
+
+/* *******************container-2*********************** */
+
+.container-2 div {
+    padding: 2rem;
+    border: 2px solid dimgray;
+    background-color: purple;
+    color: antiquewhite;
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* minmax function is to set the first amount a minimum height of the row and the second automatically fills the space with amount of content */
+    grid-auto-rows: minmax(5rem, auto);
+    gap: 1rem;
+}
