@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Components and Advanced Form Styling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" class="form-one">
+
+        <!-- <label for="name">Name:</label> -->
+<div class="form-inputs">
+        <input type="text"
+        name="user_name"
+        id="name"
+        minlength="2"
+        maxlength="40"
+        placeholder="Enter your name"
+        aria-label="enter your name"
+        required
+        >
+
+        <!-- <label for="email">Email:</label> -->
+
+        <input type="email"
+        name="user_email"
+        id="email"
+        placeholder="Enter your email"
+        aria-label="enter your email"
+        lkjdisabled
+        >
+    </div>
+        <button type="submit">submit</button>
+    </form>
+
+
+    <!-- FORM TWO -->
+    <!-- OPTGROUP -->
+    <!-- creates a grouping of options within a select element -->
+
+    <form action="#" class="form-two">
+
+        <label for="city-select">Choose Your City</label>
+        <select name="cities" id="city-select">
+            <option value="">>--Please Select a City---></option>
+            <optgroup label="Europe">
+                <option value="Warsaw">Warsaw</option>
+                <option value="Paris">Paris</option>
+                <option value="Istanbul">Istanbul</option>
+                <option value="Brussels">Brussels</option>
+                <option value="Lubjana">Lubjana</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option value="Seoul">Seoul</option>
+                <option value="Tehran">Tehran</option>
+                <option value="Yokohama">Yokohama</option>
+                <option value="Bangkok">Bangkok</option>
+                <option value="Delhi">Delhi</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <!-- <form action="#" class="form-three">
+        <input type="color">
+        <input type="range">
+        <input type="file">
+    </form> -->
+
+    <!-- DATALIST -->
+    <!-- contains a set of options that represent the permissible or recommended options available to choose for the user -->
+
+    <form action="#" class="form-three">
+        <label for="movie-choice">Pick Your Horror Movie</label>
+        <input list="movie-choices"
+        id="movie-choice"
+        name="movie-choices"
+        placeholder="Just Start Typing"
+        >
+        <datalist id="movie-choices">
+            <option value="The Exorcist"></option>
+            <option value="Childs Play"></option>
+            <option value="Annabelle"></option>
+            <option value="Saw III"></option>
+            <option value="The Ring"></option>
+            <option value="Blair Witch Project"></option>
+            <option value="It"></option>
+            <option value="Posession"></option>
+        </datalist>
+    </form>
+
+    <!-- STYLING RADIO BUTTONS -->
+
+    <section class="radio-style">
+        <h2>Radio Button Love</h2>
+        <p>Select a planet:</p>
+         
+        <!-- Neptune -->
+        <div>
+            <input 
+            type="radio" 
+            name="planet" 
+            id="neptune"
+            value="neptune"
+            checked
+            >
+            <label for="neptune">Neptune</label>
+        </div>
+
+        <!-- Pluto -->
+        <div>
+            <input 
+            type="radio" 
+            name="planet" 
+            id="pluto"
+            value="pluto"
+            >
+            <label for="pluto">Pluto</label>
+        </div>
+
+        <!-- Mercury -->
+        <div>
+            <input 
+            type="radio" 
+            name="planet" 
+            id="mercury"
+            value="mercury"
+            >
+            <label for="mercury">Mercury</label>
+        </div>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+}
+
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid yellow;
+    padding: 2.8rem 0;
+    background-color: #77747483;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 1.6rem;
+    display: flex;
+    color: #efefef;
+    text-transform: uppercase;
+}
+
+ul li:nth-of-type(1) {
+    margin-right: auto;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    /* border: 1px solid blue; */
+}
+
+h2 {
+    font-size: 8rem;
+    color: #efefef;
+    letter-spacing: 6px;
+}
+
+
+.foto-container {
+    display: flex;
+    height: 100vh;
+}
+
+.foto_1 {
+    background-image: url("/images/city_one.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foto_2 {
+    background-image: url("/images/city_two.jpg");
+    background-position: center;
+    background-size: cover;
+}
