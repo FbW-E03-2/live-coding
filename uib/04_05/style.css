@@ -1,0 +1,94 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* container n.1 */
+/* .container div {
+    background-color: rgb(168, 236, 50);
+    color: rgb(28, 49, 157);
+    padding: 0.5rem;
+    border: 2px solid dimgray;
+} */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: 10rem 500px 20%; */
+    /* grid-auto-rows: 10rem;
+} */
+
+/* POSITIONING INDIVIDUAL GRID ITEMS */
+/* div > div:nth-child(1) { */
+    /* grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: -1; */
+    /* We have a shortcut for this also!! 
+    grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+    /* grid-area: 1 / 1 / 3 / -1; */
+    /* span instead of expanding by lines it expands by full tracks! */
+    /* grid-area: 1 / 1 / span 2 / 4;
+}
+
+div > div:nth-child(2) { */
+    /* grid-column-start: 1; */
+    /* grid-row-start: 3;
+    grid-row-end: 5; */
+    /* if I don't give grid-column-end it will end in the same column as the start */
+/* }
+
+div > div:nth-child(3) { */
+    /* another shortcut 1st number for grid-column-start / 2nd number for grid-column-end. */
+    /* grid-column: 2 / 4; */
+    /* shortcut for grid-row-start and grid-row-end */
+    /* grid-row: 6 / span 2;
+    
+} */
+
+
+/* SECOND CONTAINER WITH GRANDCHILDREN */
+.cont-2 div{
+    border: 2px solid #434ef8;
+    background-color: #23ffad;
+    color: #434ef8;
+    padding: 0.5rem;
+}
+
+.cont-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr minmax(25rem, auto);
+    gap: 0.5rem;
+}
+
+div > div > div:nth-child(-n+5) {
+    border: 1px solid white;
+}
+
+div > div:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 0.5rem;
+}
+
+div > div > div:nth-child(1) {
+    /* justify-self: start aligns the grid item to be flush with the start edge of the cell */
+    justify-self: start;
+}
+
+div > div > div:nth-child(2) {
+    justify-self: end;
+}
+
+div > div > div:nth-child(3) {
+    justify-self: center;
+}
