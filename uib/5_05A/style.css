@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 0.2fr 1fr 0.1fr;
+    grid-template-areas: "head head"
+                         "nav  main"
+                         "foot foot"      
+    ;
+    /* You can define each area only once! */
+    /* You can not create a non-rectangular area */
+    /* You must define a full grid */
+}
+
+header {
+    grid-area: head;
+    background-color: aquamarine;
+}
+
+main {
+    grid-area: example;
+    background-color: lightcoral;
+}
+
+.sidebar {
+    grid-area: nav;
+    background-color: crimson;
+}
+
+article {
+    grid-area: main;
+    background-color: indianred;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flexitem {
+    width: 25rem;
+    /* padding: 10rem 0; */
+    background-color: #efefef;
+}
+
+footer {
+    grid-area: foot;
+    background-color: lemonchiffon;
+}
+
