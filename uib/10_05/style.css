@@ -1,0 +1,107 @@
+* {
+    /* background-color: pink; */
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+/* pseudo classes vs pseudo elements 
+Pseudo classes: :hover, :active, :visited 
+Pseudo elements: we use ::before, ::after. We use this to style first letter, first line...*/
+
+.one::after {
+    content: "<-- this is what we include after!";
+    color: red;
+}
+
+.three::before {
+    content: "THIRD PARAGRAPH:";
+    color: hotpink;
+}
+
+p::first-letter {
+    font-size: 3rem;
+    color: yellowgreen;
+}
+
+/* the ::first-line pseudo-element is used to add a special style to the first line of a text/paragraph. We can apply multiple properties (font, color, background, word spacing...) */
+.one::first-line {
+    font-size: 130%;
+    color: navy;
+}
+
+/* input::placeholder */
+
+/* when I am selecting a letter, word I can see the background changing */
+ul li::selection {
+    background-color: tomato;
+}
+
+
+.decorated-text::before {
+    /* must have content, display */
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    background-color: turquoise;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.8rem;
+    margin-bottom: 0.2rem;
+} 
+
+.decorated-text::after {
+    content: "";
+    display: inline-block;
+    height: 25rem;
+    width: 25rem;
+    background-color: turquoise;
+}
+
+/* Clip-path creates a clipping region that sets what part of an element should be shown. Parts inside the region are shown the rest is hidden. */
+
+.clip-1 img{
+    width: 25rem;
+                    /* 30% size that I'm grabbing for the image, then first value 50% for x axis and second value 50% for y-axis */
+    /* clip-path: circle(30% at 50% 50%); */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+
+.clip-2 img{
+
+    width: 25rem;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    /* clip-path: polygon(20% 0%, 0% 20%, 20% 49%, 0% 80%, 20% 100%, 36% 0, 80% 100%, 100% 80%, 0 57%, 100% 20%, 80% 0%, 0 84%); */
+}
+
+.clip-2 img:hover {
+    transform: scale(0.5) translate(10rem, 5rem) rotate(30deg);
+    transition: 1.2s;
+}
+
+.square {
+    height: 30rem;
+    width: 30rem;
+    background-color: fuchsia; 
+    transition: 1.3s;
+    
+}
+
+.square:hover {
+    box-shadow: inset 0 0 0 55px cyan;
+    
+
+}
