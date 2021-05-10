@@ -1,0 +1,64 @@
+* {
+    /* background-color: blue; */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    font-size: 1.2rem;
+    background-color: #333;
+    display: flex;
+}
+
+/* only for the button! */
+.subnavbtn {
+    font-size: 1.6rem;
+    border: none;
+    color: white;
+    padding: 1.6rem;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+/* only for the ul */
+.subnav-content {
+    /* I am disappearing the ul with this code: */
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(14, 148, 201);
+    width: 100%; 
+   
+} 
+/* 
+.subnav-content:hover {
+    display: block;
+    transition: 5s;
+} */
+
+.list-item {
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(14, 148, 201);
+    color: white;
+}
+
+.subnavbtn:hover {
+    background-color: rgb(14, 148, 201);
+    transition: all 0.1s ease;
+} 
+
+.subnav:hover  .subnav-content {
+    display: block;
+} 
