@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .ball {
+  position: absolute;
+  bottom: 30vh;
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  clip-path: circle();
+  /* chain two animations together / apply two animations 
+at the same time on the same element 
+  animation: forward 8s infinite linear, dribbling 0.7s infinite ease-in-out;
+}
+
+.ground {
+  position: absolute;
+  top: 70vh;
+  left: 0;
+  width: 100%;
+  border-top: 20px solid darkslategray;
+}
+
+/* keyframes  */
+
+/*
+@keyframes forward {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes dribbling {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+} */
+
+/* *******************************************TYPEWRITER************************************************** */
+
+body {
+  height: 100vh;
+  padding: 2rem;
+  color: rgb(38, 184, 38);
+  background-color: rgb(36, 35, 35);
+}
+
+.line {
+  position: relative;
+  top: 35%;
+  width: 28rem;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  /* border-right: 2px solid transparent; */
+
+  font-size: 200%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* ANIMATION */
+
+.type {
+  animation: typewriter 4s steps(256) 1s 1 normal both,
+    cursor 0.5s infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 30ch;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.45);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
