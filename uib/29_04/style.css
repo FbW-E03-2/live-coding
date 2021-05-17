@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80px;
+    margin: 2rem auto;
+    /* flex-direction: column; */
+    background: mistyrose;
+}
+
+.child {
+    background-color: peru;
+    /* default */
+    /* flex-basis: auto; */
+}
+
+/* similar to width */
+/* has a dynamic ability to change direction based on flex-direction */
+.basis {
+  flex-basis: 50%;
+  /* flex: flex-grow flex-shrink flex-basis */
+  /* default = flex: 0 1 auto; */
+  /* flex: max-size min-size ideal-size; */
+}
+
+.grow {
+  flex-basis: 40px;
+  /* flex-grow: 100; */
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* flex-shrink */
+ /* defines how much a flex item will shrink if there is not enough space available  */
+
+ .shrink-container {
+     display: flex;
+     margin: 0 auto;
+     border: 1px solid orangered;
+ }
+
+ .shrink-item {
+     flex: 0 1 300px;
+     background-color: powderblue;
+     text-align: center;
+     padding: 75px 0;
+     border: 1px solid dimgray
+ }
+
+ .shrink-item:nth-child(2) {
+     /* flex-shrink: 0.5; */
+     /* will not shrink */
+ }
+
+ .shrink-item:nth-child(4) {
+    flex-shrink: 1;
+    /* will shrink by a factor of 1 */
+}
+
+.shrink-item:nth-child(6) {
+    flex-shrink: 2;
+}
+
+.shrink-item:nth-child(even) {
+    background-color: seagreen;
+}
+

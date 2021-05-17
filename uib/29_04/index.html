@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="child">Some random content</div>
+    </div>
+    <div class="container">
+        <div class="child basis">Some random content</div>
+    </div>
+    <div class="container">
+        <div class="child grow">Some random content</div>
+    </div>
+
+
+    <!-- *************************************************************** -->
+
+    <!-- flex shrink -->
+    <!-- defines how much a flex item will shrink if there is not enough space available -->
+
+    <section class="shrink-container">
+        <!-- .shrink-item{$}*7 -->
+        <div class="shrink-item">1</div>
+        <div class="shrink-item">2</div>
+        <div class="shrink-item">3</div>
+        <div class="shrink-item">4</div>
+        <div class="shrink-item">5</div>
+        <div class="shrink-item">6</div>
+        <div class="shrink-item">7</div>
+    </section>
+</body>
+</html>
