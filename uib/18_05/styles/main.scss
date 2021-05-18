@@ -1,0 +1,105 @@
+@import "_variables";
+@import "_reset";
+@import "_mixins";
+@import "_maps";
+
+// partial! Always begins with an _ (underscore)
+// ALL valid SCSS is valid CSS
+// sass --watch input output
+// Two syntaxes in SASS
+// SASS => syntactically awesome style sheets
+// SCSS => sassy CSS
+// Variables
+// a container that holds or is assigned a value
+// let x = 10
+// let y = 25
+// x + y = 35
+// CSS Variables
+// :root {
+//   --main-bg-color: chartreuse;
+// }
+// body {
+//   background-color: var(--main-bg-color);
+// }
+body {
+  background-color: $neutral-color;
+}
+
+// NESTING allows our style rules similar to HTML tags
+
+header {
+  border: 2px solid $border-color;
+  background-color: $tertiary-color;
+
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+
+      li {
+        padding: 18px 0;
+
+        a {
+          text-decoration: none;
+          padding: 6px 12px;
+          transition: 0.6s;
+
+          // & is a shorthand for the parent selector
+          &:hover {
+            color: hotpink;
+          }
+        }
+      }
+    }
+  }
+}
+
+// end of navbar
+
+.container {
+  border: 4px solid rebeccapurple;
+  height: 14rem;
+  width: 18rem;
+  margin: $margin-center;
+  @include centered-flex();
+}
+
+p {
+  font-weight: map-get($font-weights, bold);
+  background-color: map-get($theme, primary);
+}
+
+.btn-basic {
+  display: block;
+  border: none;
+  padding: 55px 80px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 1rem auto;
+  background-color: dodgerblue;
+  color: #efefef;
+}
+
+// EXTEND DIRECTIVE => lets you share a set of CSS properties from one selector to another
+
+.btn-report {
+  @extend .btn-basic;
+  background-color: red;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.btn-submit {
+  @extend .btn-basic;
+  background-color: lawngreen;
+  padding: 15px 32px;
+
+  &:hover {
+    color: red;
+  }
+}
